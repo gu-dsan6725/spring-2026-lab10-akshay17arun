@@ -1,0 +1,37 @@
+[
+    {
+        "input": "What time is it right now in Tokyo?",
+        "expected_output": "The current local time in Tokyo with the timezone name (JST) and UTC offset (+09:00).",
+        "expected_tools": ["get_current_time"],
+        "category": "time",
+        "difficulty": "easy"
+    },
+    {
+        "input": "What is the current time in London and in New York?",
+        "expected_output": "The current local time in both London and New York with their respective timezone abbreviations and UTC offsets.",
+        "expected_tools": ["get_current_time"],
+        "category": "time",
+        "difficulty": "easy"
+    },
+    {
+        "input": "How much is 500 USD in Japanese Yen?",
+        "expected_output": "The current USD to JPY exchange rate and the converted value for 500 USD, showing the amount in Japanese Yen.",
+        "expected_tools": ["get_exchange_rate"],
+        "category": "exchange",
+        "difficulty": "easy"
+    },
+    {
+        "input": "What is the EUR to GBP exchange rate today?",
+        "expected_output": "The current exchange rate from EUR to GBP with the date of the rate.",
+        "expected_tools": ["get_exchange_rate"],
+        "category": "exchange",
+        "difficulty": "easy"
+    },
+    {
+        "input": "I am planning a business trip from New York to Tokyo. How long is the flight route by driving to JFK first, what is the current time in Tokyo, what is the weather there, what is the USD to JPY exchange rate, and what are the top business hotels in Shinjuku?",
+        "expected_output": "Driving directions from Manhattan to JFK Airport with distance and time, the current local time in Tokyo with timezone info, current Tokyo weather with temperature, the USD to JPY exchange rate, and a list of recommended business hotels in the Shinjuku area of Tokyo.",
+        "expected_tools": ["get_directions", "get_current_time", "get_weather", "get_exchange_rate", "duckduckgo_search"],
+        "category": "multi_tool",
+        "difficulty": "hard"
+    }
+]

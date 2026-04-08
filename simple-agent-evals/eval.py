@@ -49,7 +49,7 @@ load_dotenv()
 # Constants
 DEFAULT_DATASET_PATH = "dataset.json"
 DEFAULT_OUTPUT_PATH = "eval_metrics.json"
-BRAINTRUST_PROJECT_NAME = "simple-agent-evals"
+BRAINTRUST_PROJECT_NAME = "aa2627-agent-evals"
 EVAL_JUDGE_MODEL = "claude-sonnet-4-6"
 ANTHROPIC_OPENAI_BASE_URL = "https://api.anthropic.com/v1/"
 
